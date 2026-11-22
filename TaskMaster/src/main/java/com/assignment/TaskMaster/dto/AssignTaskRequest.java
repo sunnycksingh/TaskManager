@@ -1,0 +1,21 @@
+package com.assignment.TaskMaster.dto;
+
+import jakarta.validation.constraints.NotNull;
+
+public class AssignTaskRequest 
+{
+    @NotNull (message = "Assignee ID is required")
+    private Long assigneeId;
+
+    public AssignTaskRequest() {
+    }
+
+    public Long getAssigneeId() {
+        return assigneeId;
+    }
+
+    public void setAssigneeId(Long assigneeId) {
+        this.assigneeId = assigneeId;
+    }
+    
+}
